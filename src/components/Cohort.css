@@ -1,0 +1,4 @@
+.cohortContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
