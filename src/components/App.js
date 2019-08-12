@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Cohort from './Cohort';
+import AddStudent from './AddStudent';
 import people from '../data/yearbook-data.js';
 import './App.css';
 
@@ -18,6 +19,7 @@ class App extends Component {
       <header className="App-header">
       <h1>Turing Yearbook</h1>
       </header>
+      <AddStudent />
       <Cohort staff={this.state.staff} students={this.state.students}/>
       </div>
     );
