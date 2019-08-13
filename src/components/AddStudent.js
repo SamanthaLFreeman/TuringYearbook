@@ -16,8 +16,12 @@ class AddStudent extends Component {
   }
 
   handleSubmit = (e) => {
+    const newStudent = {
+      id: Date.now(),
+      ...this.state
+    }
     e.preventDefault();
-    this.props.addStudent(this.state)
+    this.props.addStudent(newStudent)
     this.setState({
       name: "",
       quote: "",
