@@ -21,7 +21,7 @@ class AddStudent extends Component {
       ...this.state
     }
     e.preventDefault();
-    this.props.addStudent(newStudent)
+    this.props.addStudent(newStudent);
     this.setState({
       name: "",
       quote: "",
