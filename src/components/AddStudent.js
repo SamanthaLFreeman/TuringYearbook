@@ -4,6 +4,7 @@ class AddStudent extends Component {
   constructor() {
     super();
     this.state = {
+      photo: 'https://placekitten.com/200/300',
       name: "",
       quote: "",
       superlative: ""
@@ -14,13 +15,14 @@ class AddStudent extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleSubmit(e) {
+  handleSubmit = (e) => {
     e.preventDefault();
+    this.props.addStudent(this.state)
     this.setState({
       name: "",
       quote: "",
       superlative: ""
-    })
+    });
   }
 
   render() {
