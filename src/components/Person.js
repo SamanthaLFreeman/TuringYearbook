@@ -1,6 +1,5 @@
 import React from 'react';
 import './Person.css';
-import ContentEditable from 'react-contenteditable';
 
 const Person = ({individual, removeStudent, studentCheck}) => {
   const button = studentCheck === 'student' ? <button onClick={() => removeStudent(individual.id)}>Remove</button> : '';
@@ -9,7 +8,7 @@ const Person = ({individual, removeStudent, studentCheck}) => {
   return (
     <section className="personContainer" key={individual.id}>
       <img className="image" src={individual.photo} alt={individual.name} />
-      <h2 className="name" contentEditable={editableCheck}>{individual.name}</h2>
+      <h3 className="name" contentEditable={editableCheck}>{individual.name}</h3>
       <p className="quote" contentEditable={editableCheck}>{individual.quote}</p>
       <p className="superlative" contentEditable={editableCheck}>{individual.superlative}</p>
       {button}

@@ -8,8 +8,10 @@ const Cohort = (props) => {
 
   return (
     <main className="cohortContainer">
-      {staff}
-      {students}
+      <h2>Staff</h2>
+      <div className="staff">{staff}</div>
+      <h2>Students</h2>
+      <div className="students">{students}</div>
     </main>
   )
 }
