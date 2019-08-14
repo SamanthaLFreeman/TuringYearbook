@@ -1,0 +1,18 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+}
+
+input {
+  border: none;
+  margin: 0 0 10px 0;
+  padding: 8px;
+}
+
+button {
+  border: none;
+  background-color: grey;
+  padding: 8px;
+}
