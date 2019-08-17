@@ -26,6 +26,26 @@ describe('App', () => {
     expect(wrapper.state('students')).toEqual(expected)
   })
 
-  
+  it('should update state to one less student when removeStudent is called', () => {
+    const wrapper = shallow(<App/>);
+    const mockStudent = {
+      id: 1,
+      name: 'Sam',
+      quote: 'hmmm',
+      superlative: 'Most likely to'
+    };
+    const mockStudent2 = {
+      id: 2,
+      name: 'Jessie',
+      quote: 'ummm',
+      superlative: 'Most likely to'
+    }
+    const expected = [mockStudent];
+
+    wrapper.setState({students: [mockStudent, mockStudent2]})
+    wrapper.instance().removeStudent(2)
+
+    expect(wrapper.state('students')).toEqual(expected)
+  })
 
 })
