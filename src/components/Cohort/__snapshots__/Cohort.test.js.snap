@@ -9,12 +9,41 @@ exports[`Cohort should match the snapshot with all data passed in correctly 1`] 
   </h2>
   <div
     className="staff"
-  />
+  >
+    <Person
+      individual={
+        Object {
+          "id": 1,
+          "name": "Robbie",
+          "quote": "pants...",
+          "studentCheck": "staff",
+          "superlative": "Most likely to",
+        }
+      }
+      key="1"
+      studentCheck="staff"
+    />
+  </div>
   <h2>
     Students
   </h2>
   <div
     className="students"
-  />
+  >
+    <Person
+      individual={
+        Object {
+          "id": 1,
+          "name": "Sam",
+          "quote": "Huh?",
+          "studentCheck": "student",
+          "superlative": "Most likely to",
+        }
+      }
+      key="1"
+      removeStudent={[MockFunction]}
+      studentCheck="student"
+    />
+  </div>
 </main>
 `;
