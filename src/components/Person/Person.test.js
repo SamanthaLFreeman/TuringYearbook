@@ -14,4 +14,5 @@ describe('Person', () => {
 
     expect(wrapper).toMatchSnapshot()
   })
+
 })
