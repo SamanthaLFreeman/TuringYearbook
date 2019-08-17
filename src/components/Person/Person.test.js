@@ -27,4 +27,19 @@ describe('Person', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('should call removeStudent prop with the person\'s id when clicked', () => {
+    const removeStudent = jest.fn()
+    const person = {
+      id: 1,
+      name: 'Sam',
+      quote: 'Huh?', superlative: 'Most likely to',
+      studentCheck: 'student'
+    }
+    const wrapper = shallow(<Person individual={person} removeStudent={removeStudent} studentCheck={'student'} />)
+    
+    wrapper.find('button').simulate('click')
+
+    expect(removeStudent).toHaveBeenCalledWith(1)
+  })
+
 })

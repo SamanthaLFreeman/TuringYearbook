@@ -33,7 +33,8 @@ class AddStudent extends Component {
   render() {
     return (
       <form>
-        <input 
+        <input
+        className="name-input" 
         type="text" 
         placeholder="Name" 
         name="name" 

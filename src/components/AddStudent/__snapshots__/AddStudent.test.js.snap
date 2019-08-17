@@ -3,6 +3,7 @@
 exports[`AddStudent should match the snapshot with all data passed in correctly 1`] = `
 <form>
   <input
+    className="name-input"
     name="name"
     onChange={[Function]}
     placeholder="Name"
