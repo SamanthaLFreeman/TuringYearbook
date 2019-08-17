@@ -1,3 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddStudent should match the snapshot with all data passed in correctly 1`] = `ShallowWrapper {}`;
+exports[`AddStudent should match the snapshot with all data passed in correctly 1`] = `
+<form>
+  <input
+    name="name"
+    onChange={[Function]}
+    placeholder="Name"
+    type="text"
+    value=""
+  />
+  <input
+    name="quote"
+    onChange={[Function]}
+    placeholder="Quote"
+    type="text"
+    value=""
+  />
+  <input
+    name="superlative"
+    onChange={[Function]}
+    placeholder="Superlative"
+    type="text"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+  >
+    Submit
+  </button>
+</form>
+`;

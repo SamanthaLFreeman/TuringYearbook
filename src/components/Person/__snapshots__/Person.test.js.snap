@@ -1,3 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Person should match the snapshot with all data passed in correctly 1`] = `ShallowWrapper {}`;
+exports[`Person should match the snapshot with all data passed in correctly if they are a student 1`] = `
+<section
+  className="personContainer"
+  key="1"
+>
+  <img
+    alt="Sam"
+    className="image"
+  />
+  <h3
+    className="name"
+    contentEditable={true}
+    suppressContentEditableWarning={true}
+  >
+    Sam
+  </h3>
+  <p
+    className="quote"
+    contentEditable={true}
+    suppressContentEditableWarning={true}
+  >
+    Huh?
+  </p>
+  <p
+    className="superlative"
+    contentEditable={true}
+    suppressContentEditableWarning={true}
+  >
+    Most likely to
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</section>
+`;
+
+exports[`Person should match the snapshot with all data passed in correctly if they are staff 1`] = `
+<section
+  className="personContainer"
+  key="1"
+>
+  <img
+    alt="Robbie"
+    className="image"
+  />
+  <h3
+    className="name"
+    contentEditable={false}
+    suppressContentEditableWarning={true}
+  >
+    Robbie
+  </h3>
+  <p
+    className="quote"
+    contentEditable={false}
+    suppressContentEditableWarning={true}
+  >
+    pants...
+  </p>
+  <p
+    className="superlative"
+    contentEditable={false}
+    suppressContentEditableWarning={true}
+  >
+    Most likely to
+  </p>
+</section>
+`;
