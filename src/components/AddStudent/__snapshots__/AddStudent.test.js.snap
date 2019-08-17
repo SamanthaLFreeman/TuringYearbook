@@ -11,6 +11,7 @@ exports[`AddStudent should match the snapshot with all data passed in correctly 
     value=""
   />
   <input
+    className="quote-input"
     name="quote"
     onChange={[Function]}
     placeholder="Quote"
@@ -18,6 +19,7 @@ exports[`AddStudent should match the snapshot with all data passed in correctly 
     value=""
   />
   <input
+    className="superlative-input"
     name="superlative"
     onChange={[Function]}
     placeholder="Superlative"

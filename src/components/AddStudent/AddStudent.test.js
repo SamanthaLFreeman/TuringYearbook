@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import AddStudent from './AddStudent';
 
 describe('AddStudent', () => {
@@ -24,4 +24,26 @@ describe('AddStudent', () => {
     expect(wrapper.state()).toEqual(expected);
   })
 
+  it('should call addStudent method on click of the button with the saved state data for a new student', () => {
+    const addStudent = jest.fn();
+    const wrapper = mount(<AddStudent addStudent={addStudent} />);
+    const newStudent = {
+      id: 1,
+      photo: 'https://placekitten.com/200/300',
+      name: 'Sam',
+      quote: 'blah',
+      superlative: 'Most Likely to'
+    }
+    
+    wrapper.setState({
+      id: 1,
+      photo: 'https://placekitten.com/200/300',
+      name: 'Sam',
+      quote: 'blah',
+      superlative: 'Most Likely to'
+    })
+    wrapper.find('button').simulate('click');
+
+    expect(addStudent).toHaveBeenCalledWith(newStudent);
+  })
 })
