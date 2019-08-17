@@ -41,14 +41,16 @@ class AddStudent extends Component {
         value={this.state.name} 
         onChange={this.handleChange}
 ></input>
-        <input 
+        <input
+        className="quote-input"
         type="text" 
         placeholder="Quote" 
         name="quote" 
         value={this.state.quote} 
         onChange={this.handleChange}
 ></input>
-        <input 
+        <input
+        className="superlative-input"
         type="text" 
         placeholder="Superlative" 
         name="superlative"
