@@ -8,4 +8,5 @@ describe('AddStudent', () => {
 
     expect(wrapper).toMatchSnapshot();
   })
+
 })
