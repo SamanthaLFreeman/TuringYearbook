@@ -21,7 +21,9 @@ exports[`Person should match the snapshot with all data passed in correctly if t
     contentEditable={true}
     suppressContentEditableWarning={true}
   >
+    "
     Huh?
+    "
   </p>
   <p
     className="superlative"
@@ -31,6 +33,7 @@ exports[`Person should match the snapshot with all data passed in correctly if t
     Most likely to
   </p>
   <button
+    className="remove-button"
     onClick={[Function]}
   >
     Remove
@@ -59,7 +62,9 @@ exports[`Person should match the snapshot with all data passed in correctly if t
     contentEditable={false}
     suppressContentEditableWarning={true}
   >
+    "
     pants...
+    "
   </p>
   <p
     className="superlative"
