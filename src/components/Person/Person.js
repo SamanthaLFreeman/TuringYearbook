@@ -2,7 +2,8 @@ import React from 'react';
 import './Person.css';
 
 const Person = ({individual, removeStudent, studentCheck}) => {
-  const button = studentCheck === 'student' ? <button onClick={() => removeStudent(individual.id)}>Remove</button> : '';
+  const button = studentCheck === 'student' ? <button className=
+  "remove-button" onClick={() => removeStudent(individual.id)}>Remove</button> : '';
   const editableCheck = studentCheck === 'student' ? true : false;
   
   return (
