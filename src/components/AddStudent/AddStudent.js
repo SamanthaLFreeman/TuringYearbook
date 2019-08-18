@@ -58,7 +58,7 @@ class AddStudent extends Component {
         onChange={this.handleChange}
 ></input>
         <button
-        onClick={(e) => this.handleSubmit(e)}>Submit</button>
+          onClick={(e) => this.handleSubmit(e)} >Submit</button>
       </form>
     )
   }
